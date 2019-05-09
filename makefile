@@ -13,7 +13,7 @@ qemu:
 	@echo
 	@echo "Press Ctrl+A and then press X to exit QEMU"
 	@echo
-	$(QEMU) -M STM32F4-Discovery -nographic -gdb tcp::1234 -S -kernel clock.bin
+	$(QEMU)	-M STM32F4-Discovery -nographic -gdb tcp::1234 -S -kernel clock.bin
 
 clean:
 	rm -f *.o *.elf *.bin
